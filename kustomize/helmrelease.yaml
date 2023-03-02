@@ -1,0 +1,53 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  annotations:
+    meta.helm.sh/release-name: bigbang
+    meta.helm.sh/release-namespace: bigbang
+  finalizers:
+  - finalizers.fluxcd.io
+  generation: 1
+  labels:
+    app.kubernetes.io/instance: bigbang
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: podinfo
+    app.kubernetes.io/part-of: bigbang
+    app.kubernetes.io/version: 1.54.0
+    helm.sh/chart: bigbang-1.54.0
+  name: podinfo
+  namespace: podinfo
+  resourceVersion: "15325"
+  uid: 8db9346e-0812-4a5b-8afd-76c70e24aaff
+spec:
+  chart:
+    spec:
+      chart: chart/
+      interval: 2m
+      reconcileStrategy: Revision
+      sourceRef:
+        kind: GitRepository
+        name: podinfo
+        namespace: podinfo
+      version: '*'
+  dependsOn:
+  - name: istio
+    namespace: bigbang
+  install:
+    remediation:
+      retries: -1
+  interval: 2m
+  releaseName: podinfo
+  rollback:
+    cleanupOnFail: true
+    timeout: 10m
+  test:
+    enable: false
+  timeout: 10m
+  upgrade:
+    cleanupOnFail: true
+    remediation:
+      remediateLastFailure: true
+      retries: -1
+  valuesFrom:
+  - kind: Secret
+    name: podinfo-values

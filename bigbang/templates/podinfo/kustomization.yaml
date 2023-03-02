@@ -1,5 +1,0 @@
-resources:
-- helmrelease.yaml
-- imagepullsecret.yaml
-- namespace.yaml
-- values.yaml
