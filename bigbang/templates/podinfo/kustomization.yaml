@@ -1,0 +1,6 @@
+resources:
+- gitrepository.yaml
+- helmrelease.yaml
+- imagepullsecret.yaml
+- namespace.yaml
+- values.yaml
