@@ -1,2 +1,3 @@
 resources:
 - helmrelease.yaml
+- values.yaml

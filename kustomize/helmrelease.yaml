@@ -27,6 +27,11 @@ spec:
         name: podinfo
         namespace: podinfo
       version: '*'
+  valuesFrom:
+    - kind: Secret
+      name: bb-defaults
+    - kind: Secret
+      name: podinfo-values
   dependsOn:
   - name: istio
     namespace: bigbang
