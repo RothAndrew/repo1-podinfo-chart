@@ -16,8 +16,6 @@ metadata:
     helm.sh/chart: bigbang-1.54.0
   name: podinfo
   namespace: podinfo
-  resourceVersion: "15325"
-  uid: 8db9346e-0812-4a5b-8afd-76c70e24aaff
 spec:
   chart:
     spec:
@@ -48,6 +46,3 @@ spec:
     remediation:
       remediateLastFailure: true
       retries: -1
-  valuesFrom:
-  - kind: Secret
-    name: podinfo-values
