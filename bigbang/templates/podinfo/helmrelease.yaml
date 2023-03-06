@@ -43,15 +43,15 @@ spec:
   dependsOn:
     {{- if .Values.gatekeeper.enabled }}
     - name: gatekeeper
-      namespace: {{ .Release.Namespace }}
+      namespace: bigbang
     {{- end }}
     {{- if .Values.istio.enabled }}
     - name: istio
-      namespace: {{ .Release.Namespace }}
+      namespace: bigbang
     {{- end }}
     {{- if .Values.monitoring.enabled }}
     - name: monitoring
-      namespace: {{ .Release.Namespace }}
+      namespace: bigbang
     {{- end }}
   {{- end }}
 {{- end }}
