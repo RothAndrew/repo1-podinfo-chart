@@ -19,7 +19,7 @@ flux:
 gitRepoName: podinfo
 
 git:
-  existingSecret: ""
+  existingSecret: null
 
 # Hardcoded bigbang values
 domain: bigbang.dev
