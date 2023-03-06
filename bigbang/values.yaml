@@ -5,14 +5,13 @@ podinfo:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/sandbox/podinfo
     path: chart
+  ingress:
+    gateway: ""
 
 
-ingress:
-  gateway: ""
+
 flux:
   interval: 1m
-
-
 
 gitRepoName: podinfo
 
