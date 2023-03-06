@@ -24,3 +24,5 @@ istio:
   enabled: true
 monitoring:
   enabled: false
+gatekeeper:
+  enabled: false
