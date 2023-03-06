@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ${flux_helm_path}
+      chart: ${flux_helm_release_path}
       interval: 2m
       reconcileStrategy: Revision
       sourceRef:
