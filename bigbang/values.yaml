@@ -1,3 +1,5 @@
+
+
 podinfo:
   enabled: true
   git:
@@ -7,4 +9,9 @@ podinfo:
 gitRepoName: podinfo
 
 
-
+# Hardcoded bigbang values
+domain: bigbang.dev
+istio:
+  enabled: true
+monitoring:
+  enabled: false
