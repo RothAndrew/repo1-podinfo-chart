@@ -9,7 +9,8 @@ podinfo:
     gateway: ""
   flux:
     interval: 1m
-  values: {}
+  values:
+    test: test
 
 
 flux:
