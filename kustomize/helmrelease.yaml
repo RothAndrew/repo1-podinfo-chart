@@ -1,31 +1,18 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  annotations:
-    meta.helm.sh/release-name: bigbang
-    meta.helm.sh/release-namespace: bigbang
-  finalizers:
-  - finalizers.fluxcd.io
-  generation: 1
-  labels:
-    app.kubernetes.io/instance: bigbang
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/name: podinfo
-    app.kubernetes.io/part-of: bigbang
-    app.kubernetes.io/version: 1.54.0
-    helm.sh/chart: bigbang-1.54.0
-  name: podinfo
-  namespace: podinfo
+  name: ${package_name}
+  namespace: ${package_namespace}
 spec:
   chart:
     spec:
-      chart: chart/
+      chart: ${flux_helm_path}
       interval: 2m
       reconcileStrategy: Revision
       sourceRef:
-        kind: GitRepository
-        name: podinfo
-        namespace: podinfo
+        kind: ${flux_helm_source_kind}
+        name: ${flux_helm_source_name}
+        namespace: ${flux_helm_source_namespace}
       version: '*'
   valuesFrom:
     - kind: Secret
