@@ -20,8 +20,8 @@ gitRepoName: podinfo
 
 git:
   existingSecret: ""
-  username: ""
   credentials:
+    username: ""
     password: ""
     caFile: ""
     privateKey: ""
