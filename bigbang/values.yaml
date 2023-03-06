@@ -4,7 +4,7 @@ podinfo:
   enabled: true
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/sandbox/podinfo
-    path: chart
+    path: "./chart"
   ingress:
     gateway: ""
   flux:
