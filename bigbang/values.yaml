@@ -7,6 +7,8 @@ podinfo:
     path: chart
   ingress:
     gateway: ""
+  flux:
+    interval: 1m
 
 
 
