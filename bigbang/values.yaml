@@ -18,15 +18,15 @@ flux:
 
 gitRepoName: podinfo
 
-git:
-  existingSecret: ""
-  credentials:
-    username: ""
-    password: ""
-    caFile: ""
-    privateKey: ""
-    publicKey: ""
-    knownHosts: ""
+# git:
+#   existingSecret: ""
+#   credentials:
+#     username: ""
+#     password: ""
+#     caFile: ""
+#     privateKey: ""
+#     publicKey: ""
+#     knownHosts: ""
 
 # Hardcoded bigbang values
 domain: bigbang.dev
