@@ -84,7 +84,7 @@ Common labels for all objects
 */}}
 {{- define "commonLabels" -}}
 app.kubernetes.io/instance: "{{ .Release.Name }}"
-app.kubernetes.io/version: "{{ .Chart.Version }}"
+app.kubernetes.io/version: "{{ .Chart.Version | replace "+" "_" }}"
 app.kubernetes.io/part-of: "bigbang"
 app.kubernetes.io/managed-by: "flux"
 {{- end -}}
