@@ -18,11 +18,3 @@ flux:
 
 gitRepoName: podinfo
 
-# # Hardcoded bigbang values
-# domain: bigbang.dev
-# istio:
-#   enabled: true
-# monitoring:
-#   enabled: false
-# gatekeeper:
-#   enabled: false
