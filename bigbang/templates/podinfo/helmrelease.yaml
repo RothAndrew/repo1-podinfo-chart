@@ -41,17 +41,17 @@ spec:
       kind: Secret
       valuesKey: "overlays"
 
-  {{- if or .Values.gatekeeper.enabled .Values.istio.enabled .Values.monitoring.enabled }}
+  {{- if or .Values.bb_gatekeeper.enabled .Values.bb_istio.enabled .Values.bb_monitoring.enabled }}
   dependsOn:
-    {{- if .Values.gatekeeper.enabled }}
+    {{- if .Values.bb_gatekeeper.enabled }}
     - name: gatekeeper
       namespace: bigbang
     {{- end }}
-    {{- if .Values.istio.enabled }}
+    {{- if .Values.bb_istio.enabled }}
     - name: istio
       namespace: bigbang
     {{- end }}
-    {{- if .Values.monitoring.enabled }}
+    {{- if .Values.bb_monitoring.enabled }}
     - name: monitoring
       namespace: bigbang
     {{- end }}
