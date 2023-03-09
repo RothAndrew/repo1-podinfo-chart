@@ -29,8 +29,6 @@ spec:
   {{ toYaml (get .Values $pkg).postRenderers | nindent 4 }}
   {{- end }}
   valuesFrom:
-    - name: bigbang-values
-      kind: Secret
     - name: {{ .Release.Name }}-{{ $pkg }}-values
       kind: Secret
       valuesKey: "common"
