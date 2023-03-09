@@ -2,17 +2,17 @@
 {{- $component := "sandbox" }}
 {{- define "bigbang.defaults.podinfo" -}}
 # hostname is deprecated and replaced with domain. But if hostname exists then use it.
-domain: {{ .Values.domain }}
+domain: {{ .Values.bb_domain }}
 istio:
-  enabled: {{ .Values.istio.enabled }}
+  enabled: {{ .Values.bb_istio.enabled }}
   podinfo:
     gateways:
     - istio-system/{{ default "public" .Values.podinfo.ingress.gateway }}
 serviceMonitor:
-  enabled: {{ .Values.monitoring.enabled }}
+  enabled: {{ .Values.bb_monitoring.enabled }}
   dashboards:
     namespace: monitoring
-    label: {{ dig "values" "grafana" "sidecar" "dashboards" "label" "grafana_dashboard" .Values.monitoring }}
+    label: {{ dig "values" "grafana" "sidecar" "dashboards" "label" "grafana_dashboard" .Values.bb_monitoring }}
 {{- end }}
 
 {{- /* Create secret */ -}}
