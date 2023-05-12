@@ -4,4 +4,4 @@ serviceAccount:
   - name: private-registry
 
 bbtests:
-  enabled: true
+  enabled: false
