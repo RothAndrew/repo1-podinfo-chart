@@ -7,7 +7,7 @@ description: Podinfo Helm chart for Kubernetes
 home: https://github.com/stefanprodan/podinfo
 maintainers:
 - email: stefanprodan@users.noreply.github.com
-  name: stefanprodan
+  name: stefanprodans
 sources:
 - https://github.com/stefanprodan/podinfo
 kubeVersion: ">=1.19.0-0"
