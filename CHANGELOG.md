@@ -12,7 +12,7 @@
 - Updated bb base to 2.0.0
 - Updated gluon to 0.2.10
 
-#### [6.0.0-bb.5] - 2022-01-31
+## [6.0.0-bb.5] - 2022-01-31
 ### Modified
 - Modified cypress tests and added gluon library
 
@@ -21,7 +21,7 @@
 - Fixed typo in helm release dependencies in bigbang
 - Fixed helpers template file to include istio annotations
 
-## [6.0.0-bb.3] - 2021-12-02
+#### [6.0.0-bb.3] - 2021-12-02
 ### Changed
 - Updated Grafana dashboard support to align with Big Bang docs
 
