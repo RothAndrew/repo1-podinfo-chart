@@ -3,5 +3,6 @@ serviceAccount:
   imagePullSecrets:
   - name: private-registry
 
-bbtests:
+bbtest:
   enabled: true
+  enabled: false
