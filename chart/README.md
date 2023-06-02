@@ -20,7 +20,7 @@ $ helm upgrade -i my-release podinfo/podinfo
 The command deploys podinfo on the Kubernetes cluster in the default namespace.
 The [configuration](#configuration) section lists the parameters that can be configured during installation.
 
-## Uninstalling the Chart
+#### Uninstalling the Chart
 
 To uninstall/delete the `my-release` deployment:
 
@@ -30,7 +30,7 @@ $ helm delete my-release
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
-## Configuration
+####Configuration
 
 The following tables lists the configurable parameters of the podinfo chart and their default values.
 
