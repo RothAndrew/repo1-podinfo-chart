@@ -8,6 +8,8 @@ home: https://github.com/stefanprodan/podinfo
 maintainers:
 - email: stefanprodan@users.noreply.github.com
   name: stefanprodan
+  
+  
 sources:
 - https://github.com/stefanprodan/podinfo
 kubeVersion: ">=1.19.0-0"
