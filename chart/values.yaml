@@ -16,7 +16,7 @@ ui:
   message: ""
   logo: ""
 
-# failure conditions
+### failure conditions
 faults:
   delay: false
   error: false
