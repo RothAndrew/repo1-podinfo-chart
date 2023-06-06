@@ -17,7 +17,7 @@ podinfo:
         envs:
           URL: "https://podinfo.bigbang.dev"
 
-# Toggle for network polocies
+### Toggle for network polocies
 networkPolicies:
   enabled: false
 
